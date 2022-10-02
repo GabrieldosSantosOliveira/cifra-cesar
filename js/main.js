@@ -47,5 +47,12 @@ function calc() {
     }
   }
   console.log(codificado);
-  document.getElementById("result").textContent = codificado;
+  document.getElementById("result").textContent = "Criptografado: " + codificado;
+}
+function descript(){
+  let text = document.getElementById("text").value;
+
+ 
+  let imprimir_descript = document.getElementById("imprimir_descript").innerHTML = "Descriptografado: " + text
+
 }
