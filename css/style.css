@@ -1,0 +1,73 @@
+body{
+    background-image: url(../img/hacker-image.png);
+}
+.title{
+display: flex;
+margin-left: 5%;
+margin-top: 2%;
+}
+.h1{
+    color: white;
+}
+.second-page{
+    margin-left: 75%;
+    text-decoration: none;
+    background-color: red;
+    width: 8%;
+    padding: 12px 12px 12px 12px;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    transition: 2s;
+}
+.second-page:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+.div-center{
+    background: linear-gradient(to right, rgb(221, 8, 8), rgb(145, 30, 30));
+    width: 40%;
+    height: 350px;
+    margin-top: -5%;
+    margin-left: 32%;
+    border-radius: 9px;
+}
+.label-input{
+    margin-top: 100px;
+}
+.input{
+    margin-top: 180px;
+}
+#size{
+    margin-top: 20%;
+    margin-left: 14%;
+    width: 350px;
+    font-size: 15px;
+    height: 8%;
+    border-radius: 9px;
+    padding: 12px;
+}
+#text{
+    margin-top: 2%;
+    margin-left: 14%;
+    width: 350px;
+    font-size: 15px;
+    height: 8%;
+    border-radius: 9px;
+    padding: 12px;
+}
+button{
+    background-color: black;
+    color: white;
+    padding: 8px 8px 8px 8px;
+    margin-left: 15%;
+    margin-top: 4%;
+    width: 25%;
+    border-radius: 15px;
+    transition: 2s;
+}
+button:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}

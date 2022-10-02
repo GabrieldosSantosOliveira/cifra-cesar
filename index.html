@@ -10,12 +10,21 @@
   <title>Cifra</title>
 </head>
 <body>
-  <label for="size">Espaçamento da cifra</label>
+  <div class="title">
+    <h1 class="h1">CIFRA DE CÉSAR</h1>
+    <a href="main.html" class="second-page">O que é</a>
+  </div>
+  <div class="div-center">
+    <div class="input">
 <input name="size" type="text" id="size" placeholder="Espaçamento da cifra" />
-<label for="size">Texto</label>
+<br>
 <input name="text" type="text" id="text" placeholder="Texto" />
-<button type="submit" onclick="calc()">Gerar</button>
+<br>
+<button type="submit" onclick="calc()">Criptografar</button>
+<button type="submit" class="second-button" onclick="descript()">Descriptografar</button>
 <div id="result"></div>
+</div>
+</div>
   <script src="./js/main.js"></script>
 </body>
 </html>
