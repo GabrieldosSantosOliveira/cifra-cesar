@@ -36,7 +36,7 @@ margin-top: 2%;
     background: linear-gradient(to right, rgb(221, 8, 8), rgb(145, 30, 30));
     width: 40%;
     height: 350px;
-    margin-top: -5%;
+    margin-top: -8%;
     margin-left: 32%;
     border-radius: 9px;
 }
@@ -74,64 +74,32 @@ button{
     border-radius: 15px;
     transition: 2s;
 }
+
 button:hover{
     transform: scale(1.1);
     transition: 1s;
 }
-.sobre{
-    position: relative;
-    width: 40%;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    overflow: hidden;
-    border-radius: 20px;
-    margin-left: 32%;
-    margin-top: 10%;
-}
-.sobre::before{
-  content: '';
-  position: absolute;
-  background: linear-gradient( rgb(184, 32, 32),rgb(241, 6, 57), rgb(175, 25, 25));
-  width: 560px;
-  height: 200%;
-  transition: 0.5s;
-  animation: animate 5s linear infinite;
-}
-@keyframes animate {
-    0%{
-        transform: rotate(0deg);
-    }
-    100%{
-        transform: rotate(360deg);
-    }
-}
 
-.sobre::after{
-  content: '';
-  position: absolute;
-  inset: 4px;
-  border-radius: 90px;
-  z-index: 20;
-}
-.sobre h2{
-    color:#fff;
-    font-size: 25px;
-    z-index: 40;
-    margin-top: -60%;
-    margin-left: 42%;
-    width: 100%;
-}
+
+.sobre{
+    background: linear-gradient(to right, rgb(221, 8, 8), rgb(145, 30, 30));
+    width: 40%;
+    height: 350px;
+    margin-top: 12%;
+    margin-left: 32%;
+    border-radius: 9px;
+    }
+    .justify{
+        width: 90%;
+    }
 .p{
     color:#fff;
+    margin-left: 5%;
+    margin-top: 10%;
     font-size: 20px;
-    z-index: 60;
-    margin-top: -60%;
-    margin-left: 10%;
     width: 100%; 
     text-align: center; 
+    text-align: justify;
 }
 .there-page{
     margin-left: 10%;
@@ -155,12 +123,21 @@ button:hover{
     transition: 1s;
 }
 .resultado{
-   margin-left: 12%;
+   margin-left: 32%;
    background-color: rgb(156, 23, 23);
    margin-top: 15px;
-   padding: 12px 12px 12px 12px;
+   width: 38%;
+   font-size: 20px;
+   padding: 18px 15px 18px 12px;
    border-radius: 12px;
    color: white;
+   transition: 2s;
+   box-shadow: 0 5px 14px red;
+}
+.resultado:hover{
+    transform: scale(1.1);
+    transition: 2s;
+    box-shadow: 0 5px 14px red;
 }
 #result{
     font-weight: bold;
