@@ -56,3 +56,13 @@ function descript(){
   let imprimir_descript = document.getElementById("imprimir_descript").innerHTML = "Descriptografado: " + text
 
 }
+let menu = document.getElementById('menu');
+let links = document.getElementById('links');
+
+function Clicar(){
+  if(links.style.display == "none"){
+    links.style.display = "block";
+    links.style.display = "flex";
+  }else if (links.style.display = "block")
+  links.style.display = "none";
+}

@@ -1,5 +1,4 @@
 @media screen and (max-width: 800px){
-   
     
     body{
         background-image: url(../img/hacker-image.png);
@@ -19,29 +18,45 @@
         font-size: 35px;
         font-weight: bold;
     }
-    .second-page{
-        margin-left: 65%;
-        text-decoration: none;
-        background-color: red;
-        width: 8%;
-        padding: 12px 12px 12px 12px;
+    #menu{
+        margin-left: 280px;
+        position: absolute;
+    }
+    #links2 {
+        display: none;
+      }
+      #links {
+        display: none;
+        flex-direction: column;
+        row-gap: 30px;
+        margin-top: 25px;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 10%;
+        left: 80%;
+        transform: translate(-50%, -50%);
+        background-color: #f02425;
+        color: #f0edda;
+        width: 25%;
+        height: 50px;
+        font-size: 15px;
+        z-index: 1;
         border-radius: 15px;
-        color: white;
-        text-align: center;
-        font-size: 25px;
-        transition: 2s;
-    }
-    .second-page:hover{
-        transform: scale(1.1);
-        transition: 1s;
-    }
+        box-shadow: 0 5px 14px red;
+      }
+      .second-page{
+        text-decoration: none;
+       color:#fff
+      }
     .div-center{
         background: linear-gradient(to right, rgb(221, 8, 8), rgb(145, 30, 30));
         width: 90%;
         height: 300px;
         margin-top: -17%;
-        margin-left: 4%;
+        margin-left: 5%;
         border-radius: 9px;
+        box-shadow: 0 5px 14px red;
     }
     .label-input{
         margin-top: 100px;
@@ -84,11 +99,12 @@
     }
     .sobre{
         background: linear-gradient(to right, rgb(221, 8, 8), rgb(145, 30, 30));
-        width: 40%;
-        height: 350px;
+        width: 93%;
+        height: 400px;
         margin-top: 12%;
-        margin-left: 32%;
+        margin-left: 4%;
         border-radius: 9px;
+        box-shadow: 0 5px 14px red;
         }
         .justify{
             width: 90%;
@@ -97,14 +113,14 @@
         color:#fff;
         margin-left: 5%;
         margin-top: 10%;
-        font-size: 20px;
+        font-size: 18px;
         width: 100%; 
         text-align: center; 
         text-align: justify;
     }
     .there-page{
-        margin-left: 10%;
-        margin-top: 14%;
+        margin-left: 6%;
+        margin-top: 18%;
         text-decoration: none;
         background-color: red;
         width: 8%;
@@ -114,21 +130,22 @@
         text-align: center;
         font-size: 25px;
         transition: 2s;
+        box-shadow: 0 5px 14px red;
     }
     .there-page:hover{
         transform: scale(1.1);
         transition: 1s;
     }
     .second-link{
-        margin-top: 2%;
+        margin-top: 6%;
         transition: 1s;
     }
     .resultado{
-       margin-left: 4%;
+       margin-left: 5%;
        background-color: rgb(156, 23, 23);
        margin-top: 15px;
        width: 82%;
-       font-size: 20px;
+       font-size: 18px;
        padding: 18px 15px 18px 12px;
        border-radius: 12px;
        color: white;
