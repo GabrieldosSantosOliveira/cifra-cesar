@@ -11,6 +11,7 @@
     .h1{
         color: white;
         font-size: 22px;
+        margin-top: 6%;
     }
     .h2{
         color: rgb(255, 255, 255);
@@ -19,7 +20,8 @@
         font-weight: bold;
     }
     #menu{
-        margin-left: 280px;
+        margin-left: 320px;
+        margin-top: 2%;
         position: absolute;
     }
     #links2 {
