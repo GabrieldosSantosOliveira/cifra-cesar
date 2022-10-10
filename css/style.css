@@ -1,3 +1,4 @@
+@media screen and (min-width: 800px){
 body{
     background-image: url(../img/hacker-image.png);
 }
@@ -24,6 +25,9 @@ margin-top: 2%;
     width: 80px;
     padding: 12px 12px 12px 12px;
     border-radius: 15px;
+  }
+  #menu{
+    display: none;
   }
   .second-page2{
     text-decoration: none;
@@ -152,4 +156,5 @@ button:hover{
 #imprimir_descript{
     margin-top: 12px;
     font-weight: bold;
+}
 }
