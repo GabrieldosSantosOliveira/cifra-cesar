@@ -1,51 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/media.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <title>Cifra de César</title>
+  </head>
+  <body class="theme-light">
+    <div class="title">
+      <h1 class="h1">CIFRA DE CÉSAR</h1>
+      <button onclick="handleTheme()">Theme</button>
+      <img
+        id="menu"
+        src="./img/menu2.png"
+        width="50px"
+        data-aos="fade-left"
+        alt="menu"
+        onclick="Clicar()"
+      />
 
-  <title>Cifra</title>
-</head>
-<body>
-  <div class="title">
-    <h1 class="h1">CIFRA DE CÉSAR</h1>
-    <img id="menu" src="./img/menu2.png" width="50px" data-aos="fade-left" alt="menu" onclick="Clicar()">
-
-    <div id="links" class="second-page" style="display: none">
-      <a href="main.html" class="second-page">O que é</a>
+      <div id="links" class="second-page" style="display: none">
+        <a href="main.html" class="second-page">O que é</a>
+      </div>
+      <div id="links2">
+        <a href="main.html" class="second-page2">O que é</a>
+      </div>
     </div>
-    <div id="links2">
-    <a href="main.html" class="second-page2">O que é</a>
-  </div>
-  </div>
-  <div class="div-center">
-    <div class="input">
-      <br>
+    <div class="div-center">
+      <div class="input">
+        <br />
 
-      <h2 class="h2">Encrypt</h2>
+        <h2 class="h2">Encrypt</h2>
 
-<input name="size" type="text" id="size" placeholder="Espaçamento da cifra" />
-<br>
+        <input
+          name="size"
+          type="text"
+          id="size"
+          placeholder="Espaçamento da cifra"
+        />
+        <br />
 
-<input name="text" type="text" id="text" placeholder="Texto" />
-<br>
-<div class="button">
-<button type="submit" onclick="calc()">Criptografar</button>
+        <input name="text" type="text" id="text" placeholder="Texto" />
+        <br />
+        <div class="button">
+          <button type="submit" onclick="calc()">Criptografar</button>
 
-<button type="submit" class="second-button" onclick="descript()">Descriptografar</button>
-</div>
-</div>
-</div>
-<div class="resultado">
-
-  <div id="result"></div>
-  <div id="imprimir_descript"></div>
-  
-  </div>
-  <script src="./js/main.js"></script>
-</body>
+          <button type="submit" class="second-button" onclick="descript()">
+            Descriptografar
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="resultado">
+      <div id="result"></div>
+      <div id="imprimir_descript"></div>
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
 </html>
