@@ -1,0 +1,43 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  flex: 1;
+  padding: 4px;
+  grid-area: main;
+  margin: 4px;
+}
+.about p {
+  font-size: 1rem;
+  text-align: justify;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 60px 1fr+100px;
+  grid-template-areas:
+    "header"
+    "main";
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  grid-area: header;
+}
+
+.there-page {
+  margin-left: 10%;
+  margin-top: 14%;
+  text-decoration: none;
+  background-color: red;
+  width: 8%;
+  padding: 12px 12px 12px 12px;
+  border-radius: 15px;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  transition: 2s;
+}

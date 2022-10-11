@@ -28,9 +28,9 @@ function calc() {
     "Z",
   ];
   const texto = document.getElementById("text").value.toUpperCase().split("");
-  const size = document.getElementById("size").value;
+  const spacing = document.getElementById("spacing").value;
 
-  const pulo = Number(size);
+  const pulo = Number(spacing);
   let codificado = "";
   for (let i = 0; i < texto.length; i++) {
     if (texto[i] === " ") {
@@ -50,12 +50,66 @@ function calc() {
   document.getElementById("result").textContent =
     "Criptografado: " + codificado;
 }
-function descript() {
-  let text = document.getElementById("text").value;
+function descriptorCesar(texto, pulo) {
+  const alfabeto = [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "I",
+    "J",
+    "K",
+    "L",
+    "M",
+    "N",
+    "O",
+    "P",
+    "Q",
+    "R",
+    "S",
+    "T",
+    "U",
+    "V",
+    "W",
+    "X",
+    "Y",
+    "Z",
+  ];
 
-  let imprimir_descript = (document.getElementById(
+  let codificado = "";
+  for (let i = 0; i < texto.length; i++) {
+    if (texto[i] === " ") {
+      codificado += " ";
+    } else {
+      const posicao = alfabeto.indexOf(texto[i]);
+      const novaPosicao = posicao + pulo;
+
+      if (novaPosicao >= alfabeto.length) {
+        codificado += alfabeto[novaPosicao - alfabeto.length];
+      } else {
+        codificado += alfabeto[novaPosicao];
+      }
+    }
+  }
+  return `<div>${codificado}</div>`;
+}
+function descriptor() {
+  const text = document.getElementById("text").value;
+  let result = [];
+
+  for (let i = 0; i < 26; i++) {
+    result.push(descriptorCesar(text, i + 1));
+  }
+  console.log(result);
+  document.getElementById(
     "imprimir_descript"
-  ).innerHTML = "Descriptografado: " + text);
+  ).innerHTML = `Descriptografado: ${result.reduce(
+    (total, value) => total + value
+  )}`;
 }
 let menu = document.getElementById("menu");
 let links = document.getElementById("links");
