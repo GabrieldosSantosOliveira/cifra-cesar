@@ -3,4 +3,23 @@
     text-decoration: none;
     color: #fff;
   }
+  .toggle-menu {
+    display: block;
+    z-index: 100;
+  }
+  .navbar {
+    display: none;
+  }
+  .dropdown-menu {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 0;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #5a8699;
+  }
 }

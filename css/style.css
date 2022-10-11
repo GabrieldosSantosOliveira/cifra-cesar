@@ -71,12 +71,20 @@
 .input::placeholder {
   color: #ffffff;
 }
-
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  justify-content: end;
+  flex: 1;
+}
+.navbar button {
+  background-color: transparent;
+  border: none;
+}
 .result {
   background-color: rgb(156, 23, 23);
-  margin-top: 15px;
   font-size: 1.5rem;
-  padding: 1rem;
   border-radius: 5px;
   color: white;
 }

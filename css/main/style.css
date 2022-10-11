@@ -1,21 +1,29 @@
-.about {
+.container-about {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   flex: 1;
   padding: 4px;
-  grid-area: main;
-  margin: 4px;
+  margin: auto;
+  max-width: 600px;
 }
-.about p {
+.container-about h1 {
+  font-weight: 700;
+}
+.container-about p {
   font-size: 1rem;
   text-align: justify;
+  line-height: 30px;
+}
+.about {
+  grid-area: main;
+  padding: 1rem;
 }
 .container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 60px 1fr+100px;
+  grid-template-rows: 60px 300px;
   grid-template-areas:
     "header"
     "main";
