@@ -1,7 +1,13 @@
+:root {
+  --bg-main: hsl(218, 44%, 12%);
+  --bg-input: hsl(218, 44%, 22%);
+  --text-input: #000;
+  --placeholder-input: #7c7c8a;
+}
 .container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 60px minmax(400px, 1fr) auto 50px;
+  grid-template-rows: 60px calc(100vh - (60px +50px)) auto 50px;
   grid-template-areas:
     "header"
     "main"
@@ -22,7 +28,6 @@
   grid-area: header;
 }
 .title-header {
-  color: white;
   font-size: 1.5rem;
   font-weight: 700;
 }
@@ -30,7 +35,6 @@
   display: none;
 }
 .title-main {
-  color: rgb(255, 255, 255);
   font-size: 2rem;
   font-weight: 700;
   align-self: center;
@@ -38,38 +42,44 @@
 
 .main {
   grid-area: main;
+  margin: 0 0.5rem;
 }
 
 .container-form {
-  max-width: 40rem;
   display: flex;
   height: 100%;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   margin: auto;
-  padding: 0 4px;
+  padding: 4rem 0;
+  gap: 25px;
+  max-width: 40rem;
 }
 .form {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
+  gap: 20px;
   flex: 1;
-  background-color: #5a8699;
+  background-color: var(--bg-main);
   border-radius: 5px;
-  padding: 0 5px;
+  padding: 2rem 1rem;
 }
 .input {
   width: 100%;
-  height: 2.5rem;
+  height: 3rem;
   padding: 1rem;
   border: none;
-  background: hsl(218, 44%, 22%);
-  color: #ffffff;
+  background: var(--bg-input);
+  color: var(--text-input);
   border-radius: 5px;
+  border: 1px solid hsl(240, 44%, 52%);
 }
 .input::placeholder {
-  color: #ffffff;
+  color: var(--placeholder-input);
+}
+.input:focus {
+  outline: none;
+  border: 2px solid cyan;
 }
 .navbar {
   display: flex;
@@ -83,8 +93,11 @@
   border: none;
 }
 .result {
-  background-color: rgb(156, 23, 23);
+  background-color: hsl(218, 44%, 18%);
   font-size: 1.5rem;
   border-radius: 5px;
   color: white;
+  max-width: 40rem;
+  width: 100%;
+  margin: auto;
 }
