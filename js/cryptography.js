@@ -111,3 +111,9 @@ function descriptor() {
     (total, value) => total + value
   )}`;
 }
+function reset() {
+  document.getElementById("text").value = "";
+  document.getElementById("spacing").value = "";
+  document.getElementById("result").textContent = "";
+  document.getElementById("imprimir_descript").textContent = "";
+}
