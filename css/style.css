@@ -3,11 +3,12 @@
   --bg-input: hsl(218, 44%, 22%);
   --text-input: #000;
   --placeholder-input: #7c7c8a;
+  --bg-button: hsl(218, 44%, 30%);
 }
 .container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 60px calc(100vh - (60px +50px)) auto 50px;
+  grid-template-rows: 60px minmax(calc(100vh - (60px +50px)), auto) auto 50px;
   grid-template-areas:
     "header"
     "main"
@@ -28,7 +29,7 @@
   grid-area: header;
 }
 .title-header {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 700;
 }
 .toggle-menu {
@@ -94,10 +95,21 @@
 }
 .result {
   background-color: hsl(218, 44%, 18%);
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   border-radius: 5px;
   color: white;
   max-width: 40rem;
   width: 100%;
   margin: auto;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: var(--bg-button);
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
 }
