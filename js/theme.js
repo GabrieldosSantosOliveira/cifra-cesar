@@ -58,10 +58,10 @@ function handleColor(theme) {
   } else {
     document.body.style.setProperty("--text-primary", "white");
     document.body.style.setProperty("--bg-main", "hsl(218, 44%, 12%)");
-    document.body.style.setProperty("--text-input", "hsl(218, 44%, 12%)");
+    document.body.style.setProperty("--text-input", "hsl(218, 44%, 99%)");
     document.body.style.setProperty(
       "--placeholder-input",
-      "hsl(218, 44%, 12%)"
+      "hsl(218, 44%, 99%)"
     );
     document.body.style.setProperty("--bg-input", "hsl(218, 44%, 12%)");
   }
