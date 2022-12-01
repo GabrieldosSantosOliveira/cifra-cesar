@@ -40,7 +40,7 @@ function calc() {
       const novaPosicao = posicao + pulo;
 
       if (novaPosicao >= alfabeto.length) {
-        codificado += alfabeto[novaPosicao - alfabeto.length];
+        codificado += alfabeto[novaPosicao % alfabeto.length];
       } else {
         codificado += alfabeto[novaPosicao];
       }
@@ -86,10 +86,10 @@ function descriptorCesar(texto, pulo) {
       codificado += " ";
     } else {
       const posicao = alfabeto.indexOf(texto[i]);
-      const novaPosicao = posicao + pulo;
+      const novaPosicao = posicao - pulo;
 
-      if (novaPosicao >= alfabeto.length) {
-        codificado += alfabeto[novaPosicao - alfabeto.length];
+      if (novaPosicao < 0) {
+        codificado += alfabeto[novaPosicao + alfabeto.length];
       } else {
         codificado += alfabeto[novaPosicao];
       }
