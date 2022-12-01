@@ -94,7 +94,7 @@
   border: none;
 }
 .result {
-  background-color: hsl(218, 44%, 18%);
+  background-color: var(--bg-button);
   font-size: 1.2rem;
   border-radius: 5px;
   color: white;
