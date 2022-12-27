@@ -45,7 +45,7 @@
               placeholder="Espaçamento da cifra"
               class="input"
             />
-            <label for="text">Conteúdo a ser decifrado</label>
+            <label for="text">Conteúdo a ser códificado</label>
             <input
               name="text"
               type="text"
@@ -53,7 +53,16 @@
               placeholder="Texto"
               class="input"
             />
-            <button type="submit" class="button" onclick="calc()">
+
+            <label for="decript">Conteúdo a ser decifrado</label>
+            <input
+              name="text"
+              type="text"
+              id="decript"
+              placeholder="Texto"
+              class="input"
+            />
+            <button type="submit" class="button" onclick="encrypt()">
               Criptografar
             </button>
 
