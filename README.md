@@ -34,6 +34,5 @@ abra o arquivo index.html
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
 ## Autor
-| [<img src="https://avatars.githubusercontent.com/u/86084272?v=4" width=115><br><sub>Gabriel Oliveira</sub>](https://www.linkedin.com/in/gabriel-dos-santos-oliveira-24b67b243/)
-| :---: | 
-
+| [<img src="https://avatars.githubusercontent.com/u/86084272?v=4" width=115><br><sub>Gabriel Oliveira</sub>](https://www.linkedin.com/in/gabriel-dos-santos-oliveira-24b67b243/) |  [<img src="https://media.licdn.com/dms/image/C4D03AQFuzcOdkIIfzA/profile-displayphoto-shrink_400_400/0/1659788939563?e=1684368000&v=beta&t=rtRffwz_TV1rAVDf_vamg-wmV_88NNQcKmCD4Zp7jJk" width=115><br><sub>Edivaldo Junior</sub>](https://www.linkedin.com/in/edivaldo-santos-junior-47a104247/) 
+| :---: |  :---: | 
