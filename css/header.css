@@ -1,0 +1,13 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: header;
+  padding: 0 1rem;
+}
+.title-header {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: "Lexend";
+  font-weight: 600;
+}

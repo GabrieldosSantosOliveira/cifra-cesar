@@ -51,8 +51,8 @@ function encrypt() {
         break;
     }
   });
-
-  document.getElementById("result").textContent = "Criptografado: " + encrypted;
+  document.getElementById("encrypt").textContent =
+    "Criptografado: " + encrypted;
 }
 function descriptorCesar(texto, spacing) {
   let encrypted = "";

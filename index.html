@@ -8,82 +8,94 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/media.css" />
     <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/switch.css" />
     <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/result.css" />
+    <link rel="stylesheet" href="css/primary-button.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/input.css" />
+    <link rel="stylesheet" href="css/header.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Cifra de César</title>
   </head>
-  <body class="theme-light">
-    <div class="container">
-      <header class="header">
-        <h1 class="title-header">CIFRA DE CÉSAR</h1>
-        <img
-          class="toggle-menu"
-          id="toggle-menu"
-          src="./img/menu2.png"
-          width="50px"
-          data-aos="fade-left"
-          alt="menu"
-          onclick="Clicar()"
-        />
-        <navbar class="navbar" id="navbar">
-          <a href="main.html">O que é</a>
-          <button onclick="handleTheme()">Theme</button>
-        </navbar>
-      </header>
-      <main class="main">
-        <div class="container-form">
-          <h2 class="title-main">Encrypt</h2>
-          <div class="form">
-            <label for="spacing">Espaçamento da cifra</label>
-            <input
-              name="spacing"
-              type="text"
-              id="spacing"
-              placeholder="Espaçamento da cifra"
-              class="input"
-            />
-            <label for="text">Conteúdo a ser códificado</label>
-            <input
-              name="text"
-              type="text"
-              id="text"
-              placeholder="Texto"
-              class="input"
-            />
-
-            <label for="decript">Conteúdo a ser decifrado</label>
-            <input
-              name="text"
-              type="text"
-              id="decript"
-              placeholder="Texto"
-              class="input"
-            />
-            <button type="submit" class="button" onclick="encrypt()">
-              Criptografar
-            </button>
-
-            <button type="submit" class="button" onclick="descriptor()">
-              Descriptografar
-            </button>
-            <button type="reset" class="button" onclick="reset()">
-              Limpar
-            </button>
-          </div>
-        </div>
-      </main>
-      <div class="result">
-        <div id="result"></div>
-        <div id="imprimir_descript"></div>
+  <body>
+    <input id="menu-hamburguer" type="checkbox" class="input-hidden" />
+    <navbar class="navbar">
+      <a class="itemsNavbar" href="main.html">Descrição</a>
+      <input id="switch-toggle" class="switch-hidden" type="checkbox" />
+      <label for="switch-toggle" class="switch-toggle" onclick="handleTheme()">
+        <span></span>
+      </label>
+    </navbar>
+    <label for="menu-hamburguer">
+      <div class="menu">
+        <span class="hamburguer"></span>
       </div>
-      <footer class="footer">
-        <p class="p">© 2021 - Todos os direitos reservados</p>
-      </footer>
+    </label>
+    <div class="container-menu"></div>
+    <div class="container-menu-shadow"></div>
+    <header class="header">
+      <h1 class="title-header">Cifra de César</h1>
+    </header>
+    <main class="main">
+      <div class="container-form">
+        <div class="form">
+          <label for="spacing">Espaçamento da cifra</label>
+          <input
+            name="spacing"
+            type="text"
+            id="spacing"
+            placeholder="Espaçamento da cifra"
+            class="input"
+          />
+          <label for="text">Conteúdo a ser códificado</label>
+          <input
+            name="text"
+            type="text"
+            id="text"
+            placeholder="Texto"
+            class="input"
+          />
+
+          <label for="decript">Conteúdo a ser decifrado</label>
+          <input
+            name="text"
+            type="text"
+            id="decript"
+            placeholder="Texto"
+            class="input"
+          />
+          <button type="submit" class="primary-button" onclick="encrypt()">
+            Criptografar
+          </button>
+
+          <button type="submit" class="primary-button" onclick="descriptor()">
+            Descriptografar
+          </button>
+          <button type="reset" class="primary-button" onclick="reset()">
+            Limpar
+          </button>
+        </div>
+      </div>
+    </main>
+    <div class="result">
+      <div id="encrypt" class="encrypt"></div>
+      <div id="imprimir_descript"></div>
     </div>
-    <script src="./js/main.js"></script>
+    <footer class="footer">
+      <p>© 2021 - Todos os direitos reservados</p>
+    </footer>
     <script src="./js/theme.js"></script>
     <script src="./js/cryptography.js"></script>
   </body>
