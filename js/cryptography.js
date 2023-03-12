@@ -97,7 +97,6 @@ function descriptor() {
 function reset() {
   document.getElementById("text").value = "";
   document.getElementById("spacing").value = "";
-  document.getElementById("result").textContent = "";
-  document.getElementById("imprimir_descript").textContent = "";
   document.getElementById("decript").value = "";
+  document.getElementById("result").textContent = "";
 }
