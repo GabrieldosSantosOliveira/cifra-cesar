@@ -51,8 +51,11 @@ function encrypt() {
         break;
     }
   });
-  document.getElementById("encrypt").textContent =
-    "Criptografado: " + encrypted;
+  let encrypt = document.createElement("div");
+  encrypt.className = "encrypt";
+  encrypt.textContent = "Criptografado: " + encrypted;
+  document.getElementById("result").innerHTML = "";
+  document.getElementById("result").appendChild(encrypt);
 }
 function descriptorCesar(texto, spacing) {
   let encrypted = "";
@@ -83,10 +86,13 @@ function descriptor() {
   for (let i = 0; i < 26; i++) {
     result.push(descriptorCesar(textForDecrypt.split(""), i + 1));
   }
+
   const decrypted = result.reduce((accumulator, value) => accumulator + value);
-  document.getElementById(
-    "imprimir_descript"
-  ).innerHTML = `Descriptografado: ${decrypted}`;
+  let divDecrypt = document.createElement("div");
+  divDecrypt.className = "encrypt";
+  divDecrypt.innerHTML = `Descriptografado: ${decrypted}`;
+  document.getElementById("result").innerHTML = "";
+  document.getElementById("result").appendChild(divDecrypt);
 }
 function reset() {
   document.getElementById("text").value = "";

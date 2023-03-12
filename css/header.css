@@ -1,12 +1,13 @@
 .header {
   display: flex;
+  height: 4rem;
   justify-content: center;
   align-items: center;
   grid-area: header;
-  padding: 0 1rem;
+  padding-top: 20px;
 }
 .title-header {
-  font-size: 2rem;
+  font-size: 1.7rem;
   font-weight: 700;
   font-family: "Lexend";
   font-weight: 600;

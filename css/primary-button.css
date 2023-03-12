@@ -10,3 +10,6 @@
   cursor: pointer;
   font-family: Lexend;
 }
+.primary-button:focus {
+  border: 2px solid var(--text-input);
+}

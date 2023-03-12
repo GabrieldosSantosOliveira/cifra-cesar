@@ -56,6 +56,9 @@ function handleColor(theme) {
     );
     document.body.style.setProperty("--bg-input", "hsl(218, 44%, 99%)");
     document.body.style.setProperty("--bg-button", "hsl(218, 44%, 99%)");
+    document.body.style.setProperty("--border-input", "#373F51");
+    document.body.style.setProperty("--border-input-focus", "#1b4332");
+    document.body.style.setProperty("--footer", "#8ecae6");
   } else {
     document.body.style.setProperty("--text-primary", "white");
     document.body.style.setProperty("--bg-main", "hsl(218, 44%, 12%)");
@@ -67,5 +70,8 @@ function handleColor(theme) {
 
     document.body.style.setProperty("--bg-button", "hsl(218, 44%, 30%)");
     document.body.style.setProperty("--bg-input", "hsl(218, 44%, 12%)");
+    document.body.style.setProperty("--border-input", "#55d6be");
+    document.body.style.setProperty("--border-input-focus", "cyan");
+    document.body.style.setProperty("--footer", "#2e5eaa");
   }
 }

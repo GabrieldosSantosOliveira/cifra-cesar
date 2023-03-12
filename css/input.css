@@ -1,18 +1,36 @@
 .input {
-  width: 100%;
-  height: 3rem;
-  padding: 1rem;
+  display: flex;
+  flex: 1;
   border: none;
-  background: var(--bg-input);
   color: var(--text-input);
-  border-radius: 5px;
-  border: 1px solid hsl(240, 44%, 52%);
+  background: transparent;
+  font-family: Lexend;
+  font-weight: 400;
 }
 .input::placeholder {
   color: var(--placeholder-input);
   font-family: Lexend;
+  font-weight: 400;
 }
 .input:focus {
   outline: none;
-  border: 2px solid cyan;
+}
+.input-root {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  height: 3rem;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid var(--border-input);
+  border-radius: 5px;
+  padding: 10px;
+  background: var(--bg-input);
+}
+.input-root:focus-within {
+  outline: none;
+  border: 2px solid var(--border-input-focus);
+}
+.icon {
+  fill: var(--text-input);
 }
